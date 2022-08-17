@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Игра-лабиринт (тестовое задание).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Разработать игру «Лабиринт» на ReactJS + Redux.
 
-## Available Scripts
+![Иллюстрация к проекту](https://github.com/teplospbru/test-task-12/blob/main/test-task-12/)
 
-In the project directory, you can run:
 
-### `npm start`
+## ТРЕБОВАНИЯ К ВЁРСТКЕ
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Дизайн игры произвольный. Пример того, что должно получиться - https://drive.google.com/file/d/1NRMVNcn9XbOWPKNrbzDW0sE_jr36rVka/view?usp=sharing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## ОПИСАНИЕ ПРИЛОЖЕНИЯ
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Есть поле размером 3 на 3 ячейки(продумайте масштабируемость). В начале игры в случайную ячейку помещаем маркер. Далее генерируются 10 «ходов» (возможные варианты «вверх», «влево», «вниз», «вправо»). Игрок должен в уме «пройти» по этим ходам по лабиринту и указать конечную точку маркера.
+После ответа (клик на ячейку) идет проверка ответа и предоставляется возможность начать новую игру (например, по клику на кнопку «Далее»).
+Если ответ введен неправильно - указать правильный ответ.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ТЕСТИРОВАНИЕ ПРИЛОЖЕНИЯ
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Приложение оттестировано при помощи [React Testing Library](https://testing-library.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Запуск приложения 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Приложение запускается скриптом`npm run start` из консоли. Приложение откроется в браузере по адресу [http://localhost:3000](http://localhost:3000) 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Запуск тестов 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Тесты запускаются скриптом`npm run test` из консоли.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Развёрнутое приложение
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Увидеть работу приложения можно [здесь](https://teplospbru.github.io/labirint/).
