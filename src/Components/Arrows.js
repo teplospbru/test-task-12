@@ -9,10 +9,10 @@ const Arrows = () => {
         <div className='arrows'>
             {
                 moves.map((move, index) => (
-                    <div className='arrow' style={ move.length > 0 ? { backgroundColor: '#34495e', } : null } key={ index + "_2" }>
+                    <div className='arrow' style={ move.length > 0 ? { backgroundColor: '#34495e', } : null } key={ index + "_2" } data-testid="arrow-box">
                         {
                             move.length > 0 
-                                ? (<svg>
+                                ? (<svg data-testid="arrow">
                                         <use xlinkHref={ '#' + move[0] }></use>
                                     </svg>)
                                 : null

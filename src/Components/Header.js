@@ -6,7 +6,7 @@ const Header = ({ isHelp, setHelp }) => {
         <nav>
             Лабиринт
             <div onClick={ () => setHelp(isHelp => !isHelp) }>
-                <svg>
+                <svg data-testid="help-btn">
                     <use xlinkHref={ isHelp ? "#close" : "#question" }></use>
                 </svg>
             </div>

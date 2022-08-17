@@ -15,7 +15,7 @@ const Help = () => {
             <p>{ 'Уровень сложности - ' + (totalMoves - 2) }</p>
             <p>{ 'Скорость - ' + speed }</p>
             <p>{ 'Количество ходов - ' + totalMoves }</p>
-            <div className='btn' onClick={ () => dispatch(setReset()) }>Сбросить прогресс</div>
+            <div className='btn' onClick={ () => dispatch(setReset()) } data-testid="reset">Сбросить прогресс</div>
         </>
     )
 };

@@ -43,13 +43,19 @@ const Info = ({ setClickable }) => {
     }
 
     return  (
-        <div className={ isTimer ? "non-active info" : "info"} onClick={ handleClick } style={{ color, width, height }} ref={ div }>
+        <div 
+            className={ isTimer ? "non-active info" : "info"} 
+            onClick={ handleClick } 
+            style={{ color, width, height }} 
+            ref={ div } 
+            data-testid="info"
+        >
             {
                 isTimer 
                     ? (<span style={{ color: '#fff' }}>{ '00:' + getPadTime(timeLeft) }</span>)
                     : (<>{ message }
                         <div>
-                            <svg style={{ fill: color }}>
+                            <svg style={{ fill: color }} data-testid="icon">
                                 <use xlinkHref={ '#' + icon }></use>
                             </svg>
                         </div></>)

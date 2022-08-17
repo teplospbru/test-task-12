@@ -25,6 +25,7 @@ const Field = ({ isClickable, setClickable }) => {
                         key={ index + '_1' } 
                         onClick={ () => handleClick(index) }
                         style={{ backgroundColor: field[1], borderColor: field[1] }}
+                        data-testid="field"
                         >
                         <svg>
                         {
