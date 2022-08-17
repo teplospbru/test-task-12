@@ -2,7 +2,7 @@
 
 Разработать игру «Лабиринт» на ReactJS + Redux.
 
-![Иллюстрация к проекту](https://github.com/teplospbru/test-task-12/blob/main/test-task-12/)
+![Иллюстрация к проекту](https://github.com/teplospbru/test-task-12/blob/main/test-task-12.jpg/)
 
 
 ## ТРЕБОВАНИЯ К ВЁРСТКЕ
