@@ -1,0 +1,24 @@
+// Colors
+$primary-color: #2d3e50;
+$secondary-color: #34495e;
+$red-color: #ff5555;
+$green-color: #27ae61;
+
+// Fonts
+$font: 'Montserrat', sans-serif;
+$base-font-size: 16;
+
+@mixin font($size, $weight, $line: 1) {
+    font-size: $size + px;
+    font-size: calc($size / $base-font-size) + rem; 
+    font-weight: $weight;
+    line-height: $line;
+    font-style: normal;
+};
+
+@mixin flex($justify, $align, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+};

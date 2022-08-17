@@ -1,0 +1,22 @@
+@import './variables';
+
+.arrows {
+    width: 100%;
+    margin-bottom: 4%;
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 7.5% 2.5%;
+    .arrow {
+        border: 3px solid $secondary-color;
+        position: relative;
+        padding-top: calc(100% - 6px);
+        //background-color: $secondary-color;
+        border-radius: 6px;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
